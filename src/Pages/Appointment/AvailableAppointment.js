@@ -14,7 +14,7 @@ const AvailableAppointment = (props) => {
     },[]);
   return (
     <div className='mb-28'>
-        <p className='text-xl text-secondary text-center mb-10'> Available Appointments on {format(date, 'PP')}</p>
+        <p className='text-xl text-secondary text-center mb-10'> Available Appointments on: {format(date, 'PP')}</p>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
           {services.map(service=><Service key={service._id} service={service} setTreatment={setTreatment}></Service>)}
         </div>
